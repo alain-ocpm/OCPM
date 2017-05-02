@@ -1,0 +1,22 @@
+@function get-list-label($list, $label, $index) {
+  @each $val in $list {
+    $currentLabel: #{nth($val, 1)};
+    @if $currentLabel == $label {
+      @return #{nth($val, $index)};
+    }
+  }
+}
+
+@function get-media-queries() {
+  
+}
+
+header {
+  background-color: red;
+}
+
+@media print, screen and (min-width: get-list-label($breakpoints, large, 2)) {
+  header {
+    background-color: blue;
+  }
+}

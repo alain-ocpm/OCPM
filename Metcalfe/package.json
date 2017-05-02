@@ -1,7 +1,7 @@
 {
-  "name": "foundation-zurb-template",
-  "version": "1.0.0",
-  "description": "Official ZURB Template for Foundation for Sites.",
+  "name": "Metcalfe",
+  "version": "0.0.1",
+  "description": "OCPM",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
